@@ -157,7 +157,7 @@ class WebsocketClient():
         self.ws.send(json.dumps(sub_params))
         #Prüfung ob Verbindung besteht
         if self.ws.connected:
-            self.on_open()
+            self.on_info(['-- Subscribed! --'])
             self.on_info([self.url])
             self.on_info(self.products)
             self.on_info(['Skript kann jederzeit durch Eingabe "wsClient.stopDownloading()" beendet werden!'])
@@ -189,7 +189,7 @@ class WebsocketClient():
     def close(self):
         if self.type == 'heartbeat':
             self.ws.send(json.dumps({'type': 'heartbeat', 'on': False}))
-        self.on_close()
+        self.on_info(['-- Socket Closed (absichtlich) --'])
         self.stop = True
         try:
             self.ws.close()
@@ -201,9 +201,6 @@ class WebsocketClient():
                     'Exception-message: {}'.format(e)
                     ]
             self.on_error(error_message)
-
-    def on_open(self):
-        self.on_info(['-- Subscribed! --'])
 
     def on_close(self):
         self.on_info(['-- Socket Closed (absichtlich) --'])
@@ -334,7 +331,7 @@ class WebsocketClient():
                             Zaehler = 0
     
     def stopDownloading(self):
-        self.on_close()
+        self.on_info(['-- Socket Closed (absichtlich) --'])
         self.stopTheScript = True
         WebsocketClient.fileobj.close()
     
