@@ -38,9 +38,9 @@ if __name__ == '__main__':
 		#if you use None as argument, this script will try to download all products available
 		# --> not recommended --> storage-size!!!
 		products=[
-				'LTC-USD','LTC-EUR','LTC-BTC','ETH-USD','ETH-EUR','ETH-BTC',
-				'BTC-USD','BTC-GBP','BTC-EUR','BCH-USD','BCH-BTC','BCH-EUR'
-				]
+			'LTC-USD','LTC-EUR','LTC-BTC','ETH-USD','ETH-EUR','ETH-BTC',
+			'BTC-USD','BTC-GBP','BTC-EUR','BCH-USD','BCH-BTC','BCH-EUR'
+			]
 		)
 
 	#this starts the script and keeps it alive for ever
