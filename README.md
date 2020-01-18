@@ -7,6 +7,7 @@ It enables you to maintain an accurate and up-to-date copy of the Coinbase excha
 
 Just free up some disk-space, run the script and you are done.
 
+![orderBookScreenshot](https://user-images.githubusercontent.com/34840859/72667533-ef822300-3a1c-11ea-8e2d-865beb373bc2.png)
 
 ## Requirements
 ```bash
