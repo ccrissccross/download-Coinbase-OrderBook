@@ -201,9 +201,6 @@ class WebsocketClient():
                     'Exception-message: {}'.format(e)
                     ]
             self.on_error(error_message)
-
-    def on_close(self):
-        self.on_info(['-- Socket Closed (absichtlich) --'])
     
     def check_fileobj(self):
         #
