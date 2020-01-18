@@ -383,5 +383,7 @@ if __name__ == '__main__':
     #this starts the script and keeps it alive, unless you call the stopDownloading-method(),
     #or you simply close the running script
     wsClient.Master_Start()
-
+    
+    #if you whisch to stop downloading the order book you can call the stopDownloading() method
+    #wsClient.stopDownloading()
 
