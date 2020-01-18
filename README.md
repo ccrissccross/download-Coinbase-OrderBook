@@ -20,7 +20,7 @@ here is the link to the GitHub-page: https://github.com/websocket-client/websock
 	--> storagePath='C:\\yourPath\\as_a_String'
 - if you don't modify the storage path the script won't start and throw errors at you
 
- ▶ execute that file and you are done
+  ▶ execute that file and you are done
 
 ```python
 
