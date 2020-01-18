@@ -18,7 +18,9 @@ here is the link to the GitHub-page: https://github.com/websocket-client/websock
 - download the "CoinbaseOrderBookLevel3.py" file
 - choose a path on your disc where you want your order book to be stored
 	--> storagePath='C:\\yourPath\\as_a_String'
-- execute that file and you are done
+- if you don't modify the storage path the script won't start and throw errors at you
+
+▶ execute that file and you are done
 
 ```python
 
@@ -32,7 +34,7 @@ if __name__ == '__main__':
 		storagePath='C:\\yourPath\\as_a_String',
 
 		#for which products do you want the OrderBook to be downloaded?
-		#the following 12 products represent the Top10 of most traded products on Coinbase as of right now
+		#the following 12 products represent the Top10 of most traded products on Coinbase
 		#if you use None as argument, this script will try to download all products available
 		# --> not recommended --> storage-size!!!
 		products=[
