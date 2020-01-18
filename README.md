@@ -15,9 +15,10 @@ pip install websocket-client
 here is the link to the GitHub-page: https://github.com/websocket-client/websocket-client
 
 ## Usage
-download the "CoinbaseOrderBookLevel3.py" file, choose a path on your disc where you want your order book to be stored.
-
-execute that file and that's it.
+- download the "CoinbaseOrderBookLevel3.py" file
+- choose a path on your disc where you want your order book to be stored
+	--> storagePath='C:\\yourPath\\as_a_String'
+- execute that file and you are done
 
 ```python
 
